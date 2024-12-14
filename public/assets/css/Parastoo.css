@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Parastoo';
+	src: url(../../assets/fonts/Parastoo-988586340ea223bda358c64b5e68a920.eot) format('embedded-opentype'),
+		url(../../assets/fonts/Parastoo-988586340ea223bda358c64b5e68a920.eot) format('embedded-opentype'),
+		url(../../assets/fonts/Parastoo-fbd9cfecdd1ad6cd96b1126c49d3b365.woff) format('woff'),
+		url(../../assets/fonts/Parastoo-b1b999607d1592212fe4c89f591a22d2.ttf) format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: auto;
+}

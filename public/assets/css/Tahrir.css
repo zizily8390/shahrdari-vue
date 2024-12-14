@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'Tahrir';
+	src: url(../../assets/fonts/Tahrir-ab4164605afe6491d08a3f3d2788b651.woff2) format('woff2'),
+		url(../../assets/fonts/Tahrir-512a2be91e9b553ef4451eb0a148b577.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Tahrir';
+	src: url(../../assets/fonts/Tahrir-a5bbf89540062b6a711fd0c431276746.woff2) format('woff2'),
+		url(../../assets/fonts/Tahrir-37180b81452ca60e93e08841cf709f31.woff) format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Tahrir';
+	src: url(../../assets/fonts/Tahrir-b65322d0e4e1259c6bed37dfa668c7b7.woff2) format('woff2'),
+		url(../../assets/fonts/Tahrir-11a6218b302339485338bb1f025a2ca5.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
