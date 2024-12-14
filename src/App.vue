@@ -1,27 +1,28 @@
 <template>
   <div class="container text-center">
-    <div class="row" style="margin-top: 1rem; margin-bottom: 1rem;"></div>
+    <div class="row" style="margin-top: 2rem; margin-bottom: 1rem;"></div>
     <div class="row">
       <div class="col-md-12 mb-1">
-        <h1 style="font-family: Tahrir;margin-bottom: 2rem;">خوش آمدید</h1>
-        <img src="/public/assets/images/pez.jpg" alt="">
+        <img width="150px" src="/public/assets/images/logo.jpg" alt="">
+        <h1 style="font-family: Tahrir;margin-bottom: 5rem;">شهرداری قمصر </h1>
       </div>
     </div>
-    <div class="row" style="margin-top: 7rem;">
+    <div class="row" style="margin-top: 2rem;">
       <div class="col-md-4"></div>
       <div class="col-md-4">
         <p class="lead">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, inventore quo. Ad dolorum quo tenetur cum
-          suscipit blanditiis modi autem sequi quas ipsum libero consequatur, nihil neque voluptatum hic natus!
+          به سامانه جامع اطلاعات شهرداری قمصر خوش آمدید. برای پیگیری کد پستی و آدرس پستی خود، روی پیگیری کد پستی کلیک
+          کنید تا اطلاعات آدرس پستی شما در سامانه پست نمایش داده شود. در صورت وجود مشکل با مرکز شهرداری قمصر تماس
+          بگیرید.
         </p>
         <div class="col-md-4"></div>
       </div>
     </div>
-    <div class="row" style="margin-top: 11rem;">
+    <div class="row" style="margin-top: 7rem;">
       <div class="col-md-12">
-        <button class="btn btn-primary" style="padding: 10px 50px; font-size: 20px; width: 300px;"
-          @click="handleClick">کلیک
-          کنید</button>
+        <button class="btn btn-primary"
+          style="padding: 10px 50px; font-size: 20px; width: 300px; background-color: #D75D8E; border-color: #D75D8E;"
+          @click="handleClick">پیگیری کد پستی</button>
       </div>
     </div>
   </div>
