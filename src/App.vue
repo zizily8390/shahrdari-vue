@@ -18,11 +18,17 @@
         <div class="col-md-4"></div>
       </div>
     </div>
-    <div class="row" style="margin-top: 7rem;">
+    <div class="row" style="margin-top: 4rem;">
       <div class="col-md-12">
-        <button class="btn btn-primary"
-          style="padding: 10px 50px; font-size: 20px; width: 300px; background-color: #D75D8E; border-color: #D75D8E;"
-          @click="handleClick">پیگیری کد پستی</button>
+        <div class="div" v-if="isCodeValid">
+          <button class="btn btn-primary"
+            style="padding: 10px 50px; font-size: 20px; width: 300px; background-color: #D75D8E; border-color: #D75D8E;"
+            @click="goToPost">پیگیری کد پستی</button>
+        </div>
+        <div class="div" v-else>
+          <p style="font-size: 5rem;font-family: Tahrir;">404</p>
+          <p style="font-size: 2rem; color: red; ">صفحه مورد نظر یافت نشد</p>
+        </div>
       </div>
     </div>
   </div>
@@ -31,13 +37,27 @@
 
 <script>
 export default {
-  name: 'App',
+  name: "App",
+  data() {
+    return {
+      isCodeValid: false, // Boolean to track if the code is valid
+      code: null, // Store the extracted code
+    };
+  },
+  created() {
+    let urlParams = new URLSearchParams(window.location.search);
+    this.code = urlParams.get("code");
+    this.isCodeValid = !!this.code;
+  },
   methods: {
-    goToExternalSite() {
-      let urlParams = new URLSearchParams(window.location.search);
-      const code = (urlParams.get('code'));
-      window.open("https://gnaf2.post.ir/pdf/postalcodes/plate/" + code, '_blank');
-    }
-  }
-}
+    goToPost() {
+      if (this.code) {
+        window.open(
+          `https://gnaf2.post.ir/pdf/postalcodes/plate/${this.code}`,
+          "_blank"
+        );
+      }
+    },
+  },
+};
 </script>
