@@ -40,8 +40,8 @@ export default {
   name: "App",
   data() {
     return {
-      isCodeValid: false, // Boolean to track if the code is valid
-      code: null, // Store the extracted code
+      isCodeValid: false,
+      code: null,
     };
   },
   created() {
